@@ -10,9 +10,6 @@ import android.widget.TextView;
 import com.peterung.sunshine.R;
 import com.peterung.sunshine.data.model.Forecast;
 
-import java.util.Collection;
-import java.util.List;
-
 /**
  * Created by peter on 7/24/15.
  */
@@ -46,9 +43,7 @@ public class ForecastAdapter extends ArrayAdapter<Forecast> {
 
         Forecast item = getItem(position);
         ViewHolder holder = (ViewHolder) view.getTag();
-        holder.textView.setText();
-
-
+        holder.textView.setText(item.getDisplayValue());
 
         return view;
     }

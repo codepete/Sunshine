@@ -2,8 +2,9 @@ package com.peterung.sunshine.data.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by peter on 7/23/15.
@@ -26,9 +27,18 @@ public class Forecast {
         return new Date(dt * 1000);
     }
 
+    public String getWeatherValue() {
+        if (weathers.length == 0) {
+            return null;
+        }
+
+        Weather weather = weathers[0];
+        return weather.main;
+    }
+
     public String getDisplayValue() {
-        String date = getDate().toString();
-        return String.format("%s - %s - %d/%d", )
+        String date = new SimpleDateFormat("EEE, MMM d", Locale.US).format(getDate());
+        return String.format("%s - %s - %d/%d", date, getWeatherValue(), (int)temperature.max, (int)temperature.min);
     }
 
 
