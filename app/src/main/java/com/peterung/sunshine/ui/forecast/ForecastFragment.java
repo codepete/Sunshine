@@ -1,12 +1,9 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.forecast;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.net.SSLCertificateSocketFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -15,8 +12,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
-import android.telecom.Call;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,22 +23,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.peterung.sunshine.R;
-import com.peterung.sunshine.data.api.OpenWeatherMapService;
 import com.peterung.sunshine.data.provider.WeatherContract;
-import com.peterung.sunshine.data.model.ForecastResponse;
 import com.peterung.sunshine.data.sync.SunshineSyncAdapter;
-import com.peterung.sunshine.ui.adapter.ForecastAdapter;
 import com.peterung.sunshine.utils.WeatherDataUtility;
-import com.peterung.sunshine.utils.WeatherDbUtility;
 
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
-import rx.Subscriber;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
 

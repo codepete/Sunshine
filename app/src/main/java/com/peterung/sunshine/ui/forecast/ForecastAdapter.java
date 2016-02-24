@@ -1,4 +1,4 @@
-package com.peterung.sunshine.ui.adapter;
+package com.peterung.sunshine.ui.forecast;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -10,8 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.peterung.sunshine.R;
-import com.peterung.sunshine.data.provider.WeatherContract;
-import com.peterung.sunshine.ui.ForecastFragment;
 import com.peterung.sunshine.utils.WeatherDataUtility;
 
 public class ForecastAdapter extends CursorAdapter {

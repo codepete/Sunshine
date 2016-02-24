@@ -1,4 +1,4 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.detail;
 
 import android.content.Intent;
 import android.database.Cursor;

@@ -1,4 +1,4 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.detail;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;

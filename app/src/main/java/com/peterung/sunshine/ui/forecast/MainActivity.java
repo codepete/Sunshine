@@ -1,20 +1,19 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.forecast;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.peterung.sunshine.R;
-import com.peterung.sunshine.data.model.Forecast;
 import com.peterung.sunshine.data.sync.SunshineSyncAdapter;
+import com.peterung.sunshine.ui.detail.DetailActivity;
+import com.peterung.sunshine.ui.detail.DetailFragment;
+import com.peterung.sunshine.ui.setting.SettingsActivity;
 import com.peterung.sunshine.utils.WeatherDataUtility;
 
 

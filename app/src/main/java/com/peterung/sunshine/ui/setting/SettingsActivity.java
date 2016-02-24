@@ -1,15 +1,11 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.setting;
 import android.annotation.TargetApi;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-
-import com.peterung.sunshine.R;
-
 
 
 public class SettingsActivity extends AppCompatActivity {

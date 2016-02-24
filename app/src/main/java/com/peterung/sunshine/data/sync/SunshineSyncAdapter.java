@@ -35,9 +35,8 @@ import com.peterung.sunshine.data.model.ForecastResponse;
 import com.peterung.sunshine.data.model.Temperature;
 import com.peterung.sunshine.data.model.Weather;
 import com.peterung.sunshine.data.provider.WeatherContract;
-import com.peterung.sunshine.ui.MainActivity;
+import com.peterung.sunshine.ui.forecast.MainActivity;
 import com.peterung.sunshine.utils.WeatherDataUtility;
-import com.peterung.sunshine.utils.WeatherDbUtility;
 
 import java.util.ArrayList;
 import java.util.HashMap;

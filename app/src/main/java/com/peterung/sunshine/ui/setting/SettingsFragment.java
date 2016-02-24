@@ -1,4 +1,4 @@
-package com.peterung.sunshine.ui;
+package com.peterung.sunshine.ui.setting;
 
 
 import android.content.Context;

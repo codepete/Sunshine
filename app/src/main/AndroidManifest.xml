@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.forecast.MainActivity"
             android:theme="@style/ForecastTheme"
             android:label="@string/app_name">
             <intent-filter>
@@ -28,19 +28,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.DetailActivity"
-            android:parentActivityName=".ui.MainActivity">
+            android:name=".ui.detail.DetailActivity"
+            android:parentActivityName=".ui.forecast.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.peterung.sunshine.ui.MainActivity" />
+                android:value=".ui.forecast.MainActivity" />
         </activity>
         <activity
-            android:name=".ui.SettingsActivity"
+            android:name=".ui.setting.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".ui.MainActivity" >
+            android:parentActivityName=".ui.forecast.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.peterung.sunshine.ui.MainActivity" />
+                android:value=".ui.forecast.MainActivity" />
         </activity>
         <provider
             android:authorities="@string/content_authority"
