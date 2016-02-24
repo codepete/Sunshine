@@ -8,12 +8,9 @@ import retrofit.http.GET;
 import retrofit.http.QueryMap;
 import rx.Observable;
 
-/**
- * Created by peter on 7/23/15.
- */
 public interface OpenWeatherMapApi {
 
-    @GET("/data/2.5/forecast/daily?format=json&units=imperial")
-    Observable<ForecastResponse> getForecast(@QueryMap Map<String, String> options);
+    @GET("/data/2.5/forecast/daily")
+    ForecastResponse getForecast(@QueryMap Map<String, String> options);
 
 }

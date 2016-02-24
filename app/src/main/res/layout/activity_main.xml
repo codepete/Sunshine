@@ -1,4 +1,7 @@
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    android:name="com.peterung.sunshine.ui.ForecastFragment" tools:layout="@layout/fragment_main"
-    android:layout_width="match_parent" android:layout_height="match_parent" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/forecast_fragment"
+    android:name="com.peterung.sunshine.ui.ForecastFragment"
+    tools:layout="@android:layout/list_content" />
