@@ -1,10 +1,6 @@
 package com.peterung.sunshine.data.api;
 
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-
 import com.peterung.sunshine.BuildConfig;
-import com.peterung.sunshine.data.api.OpenWeatherMapApi;
 
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;

@@ -21,12 +21,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.peterung.sunshine.R;
-import com.peterung.sunshine.data.model.Forecast;
 import com.peterung.sunshine.data.provider.WeatherContract;
 import com.peterung.sunshine.utils.WeatherDataUtility;
-import com.peterung.sunshine.utils.WeatherDbUtility;
-
-import java.util.Locale;
 
 public class DetailFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
 

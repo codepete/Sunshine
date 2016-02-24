@@ -6,7 +6,6 @@ import java.util.Map;
 
 import retrofit.http.GET;
 import retrofit.http.QueryMap;
-import rx.Observable;
 
 public interface OpenWeatherMapApi {
 
